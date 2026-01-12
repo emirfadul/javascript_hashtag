@@ -14,23 +14,27 @@
 //   console.log("Produto " + (index + 1) + ": " + produtos[index]);
 // }
 
-let produtos = ["Camiseta", "Calça", "Boné", "Meias"]; //0 , 1 , 2 , 3 - indices
+// let produtos = ["Camiseta", "Calça", "Boné", "Meias"]; //0 , 1 , 2 , 3 - indices
+
+// for (let index = 0; ; index++) {
+//   if (index >= produtos.length) {
+//     break;
+//   }
+//   console.log("Produto " + (index + 1) + ": " + produtos[index]);
+// }
+
+// loopingInfinito
+// for (;;) {
+//   console.log("Loop Infinito");
+// }
 
 for (let index = 0; ; index++) {
-  if (index >= produtos.length) {
-    break;
-  }
-  console.log("Produto " + (index + 1) + ": " + produtos[index]);
-}
-
-loopingInfinito
-for (;;) {
   console.log("Loop Infinito");
 }
 
-// for (let index = 0; ; index++) {
-//   console.log("Loop Infinito");
-// }
+console.log("Sai do loop infinito");
+
+
 
 // let i = 4;
 // // let i = 2;
