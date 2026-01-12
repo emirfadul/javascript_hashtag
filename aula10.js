@@ -23,10 +23,10 @@ for (let index = 0; ; index++) {
   console.log("Produto " + (index + 1) + ": " + produtos[index]);
 }
 
-// loopingInfinito
-// for (;;) {
-//   console.log("Loop Infinito");
-// }
+loopingInfinito
+for (;;) {
+  console.log("Loop Infinito");
+}
 
 // for (let index = 0; ; index++) {
 //   console.log("Loop Infinito");
