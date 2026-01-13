@@ -18,7 +18,7 @@ function sairFilme(){
 function opcoesConfiguracao(entrada){
 
   do{
-    console.log("Opçoes: 1 - pausar, 2 - sair");
+    console.log("Opçoes: 1-pausar, 2-sair");
     console.log("opçáo: "+entrada);
 
     if(entrada === 1){
@@ -28,7 +28,7 @@ function opcoesConfiguracao(entrada){
       sairFilme();
       reproduzido = false;
     }else{
-      console.log("Opçáo inv[alida.");
+      console.log("Opçáo inv[alida. Escolha 1-pausar ou 2-sair");
       break
     }
   }while(reproduzindo);  
