@@ -6,7 +6,7 @@ function factorial(n) {
   }
 }
 
-let valorFatorial = factorial(5);
+let valorFatorial = factorial(15);
 // let valorFatorial = factorial(1543);
 console.log(valorFatorial);
 
