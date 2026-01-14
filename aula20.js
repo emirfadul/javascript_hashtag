@@ -21,3 +21,6 @@ function recursividade(string) {
 
 console.log(recursividade("Hashtag"));
 console.log(recursividade("H"));
+
+
+console.log(recursividade("emir"));
