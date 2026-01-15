@@ -30,16 +30,21 @@
 // =================================================================
 
 // exercicio 3
-let pontos = 0;
+// let pontos = 0;
 
-function categoriaCliente(pontos){  
-    if (pontos >= 85){
-        return console.log("Clinte Premium.")
-    }else if (pontos <= 84 && pontos >= 50){
-        return console.log("Cliente Regular.")
-    }else{
-        return console.log("Cliente Comum.")
-    }
-}
+// function categoriaCliente(pontos){  
+//     if (pontos >= 85){
+//         return console.log("Clinte Premium.")
+//     }else if (pontos <= 84 && pontos >= 50){
+//         return console.log("Cliente Regular.")
+//     }else{
+//         return console.log("Cliente Comum.")
+//     }
+// }
 
-categoriaCliente(45);
+// categoriaCliente(45);
+
+// =================================================================
+
+// exercicio 4
+
