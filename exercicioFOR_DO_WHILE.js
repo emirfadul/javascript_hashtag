@@ -75,6 +75,7 @@
 //==========================
 
 // Exercicio 5
+
 // Estrutura de Repetição - DO...WHILE:
 // Exercício 5: Adivinhe o Número Secreto para Desconto
 // Você deseja criar um programa que permite aos clientes da sua lanchonete adivinharem um número secreto
@@ -82,8 +83,8 @@
 // adivinharem o número secreto. Crie um programa que use a estrutura do...while para permitir que os clientes
 // tentem adivinhar o número secreto.
 
-// import promptSync from 'prompt-sync';
-// const prompt = promptSync();
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
 
 // let numeroSecreto = 7; // Número secreto para ganhar o desconto
 // let tentativa;
@@ -117,5 +118,44 @@
 
 // Exercicio 6
 
+const estoqueLanchonete =  {
+    hamburger : 10,
+    batataFrita : 20,
+    refrigerante: 30,
+    milkshake : 20,
+}
 
+function atualizarEstoque(estoque, itemFalta, quantidade){
+    if(estoque.hasOwnProperty(itemFalta)){
+        estoque[itemFalta] += quantidade;     
+        console.log(`Estoque atualizado: ${itemFalta} : ${estoque[itemFalta]}`); 
+    }else{
+        console.log("Item não encontrado no estoque.")
+    }
+}
 
+console.log("Estoque da Lanchonte");
+console.log(estoqueLanchonete);
+
+let continuarAdicionando = true;
+let itemNaoEncontrado = false;
+
+do {
+    const itemFalta = "hamburger";
+    const quantidadeAdicionar = 5;
+
+    if(!estoqueLanchonete.hasOwnProperty(itemFalta)){
+        if (!itemNaoEncontrado) {
+            console.log("Item náo encontrado");
+            itemNaoEncontrado = true;
+        }
+    }else if(estoqueLanchonete[itemFalta] + quantidadeAdicionar > 50){
+        continuarAdicionando = false;
+        console.log(`O limite do estoque ${itemFalta}: ${estoqueLanchonete[itemFalta]} foi atingido.`)
+    }else{
+        atualizarEstoque(estoqueLanchonete, itemFalta, quantidadeAdicionar);
+    } 
+} while(continuarAdicionando);
+
+console.log("Estoque final:");
+console.log(estoqueLanchonete);
